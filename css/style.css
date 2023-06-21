@@ -13,12 +13,37 @@ img{
     height: 400px;
     background-color: rgb(53, 93, 224);
 }
-.container{
+.headline{
     display: flex;
     height: 100px;
     justify-content: space-between;
     align-items: center;
 }
-.card{
-    background-image: ;
+.container{
+    max-width: 1180px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.card{
+    width: 30%;
+    border: 2px dashed black;
+    margin: 2rem 0;
+}
+
+.card-media {
+    position: relative;
+}
+.card-media > img {
+    width: 100%;
+}
+
+.card-media > .discount {
+    background-color: red;
+    padding: 1rem;
+    position:relative;
+    bottom: 70px;
+    top: -70px;
+}
+
