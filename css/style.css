@@ -4,14 +4,43 @@
     margin: 0;
     padding: 0;
 }
-img{
+/* img{
     max-width: 100%;
+} */
+.secondary{
+    display: none;
 }
+.container-h{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.links-lists{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    width: 50%;
+}
+.logo{
+    text-align: center;
+}
+
 .header{
     display: flex;
-    justify-content: center;
-    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
     background-color: rgb(53, 93, 224);
+}
+
+i{
+    margin-inline: 5px;
 }
 .headline{
     display: flex;
@@ -20,16 +49,16 @@ img{
     align-items: center;
 }
 .container{
-    max-width: 1180px;
-    margin:auto;
+    width: 1180px;
+    margin: 30px auto ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap:20px;
+
 }
 .card{
-    width: 30%;
-    border: 2px dashed black;
-    margin: 2rem 0;
+    width: calc((100% / 3) - (40px / 3)); 
 }
 
 .card-media {
@@ -41,9 +70,94 @@ img{
 
 .card-media > .discount {
     background-color: red;
-    padding: 1rem;
+    padding: 3px 8px;
     position:relative;
-    bottom: 70px;
-    top: -70px;
+    bottom: 80px;
 }
+
+.card:hover .primary{
+    display: none;
+}
+.card:hover .secondary{
+    display: inline-block;
+}
+p{
+    color: grey;
+
+}
+.new-price{
+    color: red;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.heart {
+    background-color: white;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+.green {
+    color: white;
+    background-color: green;
+    padding: 3px 8px;
+    position: relative;
+    bottom: 80px;
+}
+footer * {
+    text-decoration: none;
+    color: white;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer {
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.mainfooter-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.left-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.left-ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.7rem;
+}
+
+.right-ul {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.right-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.conteiner {
+   
+    width: 1180px;
+    margin: 0 auto;
+}
+
 
