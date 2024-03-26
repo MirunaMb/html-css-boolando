@@ -25,7 +25,7 @@ a{
     text-decoration: none;
 }
 #logo{
-    width: 50%;
+    width: 10%;
 }
 .logo{
     text-align: center;
@@ -36,7 +36,7 @@ a{
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: rgb(53, 93, 224);
+    background-color: #dedede;
 }
 
 i{
@@ -159,5 +159,6 @@ footer {
     width: 1180px;
     margin: 0 auto;
 }
+
 
 
